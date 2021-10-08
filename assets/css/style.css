@@ -12,7 +12,7 @@
     width: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -145px;
+    margin-top: -165px;
 }
 #fondo3 {
     background-image: url('../images/fondo3.png');
@@ -20,7 +20,7 @@
     width: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -116px;
+    margin-top: -136px;
 
 }
 #fondo4 {
@@ -29,7 +29,7 @@
     width: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -190;
+    margin-top: -210;
 }
 #fondo5 {
     background-image: url('../images/fondo5.png');
@@ -37,7 +37,7 @@
     width: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -145px;
+    margin-top: -165px;
 }
 #fondo6 {
     background-image: url('../images/fondo6.png');
@@ -46,22 +46,172 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#fondo7 {
+.fondo7 {
     background-image: url('../images/fondo7.png');
     height: 100%;
     width: auto;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: -110px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5A5872;
+  margin: 0px;
+}
+
+/* .bg_cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+} */
+
 .up-section {
-    margin-top: -100px;
+    margin-top: -110px;
 }
 
 i, span, a {
     display: inline-block;
     text-decoration: none;
 }
+
+/*===== All Button Style =====*/
+.main-btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 0;
+  padding: 0 40px;
+  font-size: 16px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.4s ease-out 0s;
+  border-radius: 10px;
+  background-color: #80361d;
+}
+
+.main-btn:hover {
+  background-color: #bd5330;
+  color: #fff;
+}
+
+/*===== All Section Title Style =====*/
+.section_title .title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 70%;
+}
+
+
+/*===========================
+    10.CONTACT css 
+===========================*/
+.contact_area {
+  position: relative;
+  z-index: 5;
+ 
+}
+
+.contact_area::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+p.form-message.success, p.form-message.error {
+  font-size: 16px;
+  color: #ffffff;
+  background: #F9F9F9;
+  padding: 10px 15px;
+  margin-top: 30px;
+  background-color: #fff;
+  margin-left: 15px;
+}
+
+p.form-message.success.form-message.error, p.form-message.error.form-message.error {
+  color: #f00;
+}
+
+.single_form {
+  margin-top: 30px;
+}
+
+.single_form input,
+.single_form textarea {
+  width: 100%;
+  height: 55px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 0 25px;
+  font-size: 16px;
+  color: #fff;
+  background: none;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single_form input:focus,
+.single_form textarea:focus {
+  border-color: #fff;
+}
+
+.single_form textarea {
+  height: 170px;
+  resize: none;
+  padding-top: 15px;
+}
+
 
 /*===========================
     11.FOOTER css 
@@ -101,14 +251,17 @@ i, span, a {
     font-size: 16px;
     color: #fff;
     padding-top: 15px;
+    padding-bottom: 20px;
   }
   
   .credit a {
     color: #fff;
   }
   
+  
   .footer_social ul li {
     display: inline-block;
+    padding-top: 15px;
   }
   
   .footer_social ul li + li {
@@ -157,3 +310,6 @@ i, span, a {
     background-color: #a14728;
   }
   
+  .back-to-top i {
+    padding-top: 8px;
+  }

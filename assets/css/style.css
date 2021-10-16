@@ -1,23 +1,20 @@
 #fondo1 {
     background-image: url('../images/fondo1.png');
-    height: 100%;
-    width: auto;
+    height: 1400px;
     background-size: cover;
     background-repeat: no-repeat;
     /* margin-top: -100px; */
 }
 #fondo2 {
     background-image: url('../images/fondo2.png');
-    height: 100%;
-    width: auto;
+    height:1200px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -165px;
 }
 #fondo3 {
     background-image: url('../images/fondo3.png');
-    height: 100%;
-    width: auto;
+    height: 1200px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -136px;
@@ -25,34 +22,34 @@
 }
 #fondo4 {
     background-image: url('../images/fondo4.png');
-    height: 100%;
-    width: auto;
+    height:1200px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -210;
+    margin-top: -210px;
 }
 #fondo5 {
     background-image: url('../images/fondo5.png');
-    height: 100%;
-    width: auto;
+    height:1200px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -165px;
 }
 #fondo6 {
     background-image: url('../images/fondo6.png');
-    height: 100%;
-    width: auto;
+    height: 1200px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .fondo7 {
     background-image: url('../images/fondo7.png');
-    height: 100%;
-    width: auto;
+    height: 1500px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -110px;
+}
+
+#logo {
+  width: 80%;
 }
 
 h1,

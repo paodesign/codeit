@@ -145,8 +145,8 @@ body {
 section {
   border: 10px solid red;
 }
-
-.prueba {
+/* 
+ .prueba {
   /* background-color: #bd5330;
   border: 5px solid black; */
   /* width: 500px;
@@ -154,8 +154,8 @@ section {
   /* position: relative;
   top: 300px;
   margin-right: auto;
-  margin-left: auto; */
-}
+  margin-left: auto; 
+} */ 
 
 #fondo1 {
   background-image: url("../images/fondo_1.jpg");

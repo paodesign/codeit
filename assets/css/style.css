@@ -132,8 +132,6 @@ color secundario :  #80361d,
   font-weight: normal;
 }
 
-
-
 body {
   font-family: "Museo Slab 500";
 }
@@ -149,13 +147,13 @@ section {
  .prueba {
   /* background-color: #bd5330;
   border: 5px solid black; */
-  /* width: 500px;
+/* width: 500px;
   height: 100px; */
-  /* position: relative;
+/* position: relative;
   top: 300px;
   margin-right: auto;
   margin-left: auto; 
-} */ 
+} */
 
 #fondo1 {
   background-image: url("../images/fondo_1.jpg");
@@ -202,6 +200,25 @@ section {
   min-height: 850px;
   background-size: cover;
   background-repeat: round;
+  position: absolute;
+  
+}
+
+#fondo-mar-izq {
+  width: 700px;
+  height: 700px;
+  position: relative;
+  bottom:-848px;
+  left:-375px;
+}
+
+#fondo-mar-dcha {
+  width:768px;
+  height:805px;
+  position: relative;
+  bottom:-27px;
+  right:-1453px;
+  
 }
 
 .fondo7 {
@@ -223,8 +240,8 @@ div nav a figure img #logo {
 
 h1,
 h4 {
-  font-family:"Museo Slab 700" ;
-  color: #80361D;
+  font-family: "Museo Slab 700";
+  color: #80361d;
   margin: 0px;
 }
 
@@ -297,7 +314,7 @@ a {
   z-index: 5;
   transition: all 0.4s ease-out 0s;
   border-radius: 10px;
-  background-color: #80361D;
+  background-color: #80361d;
 }
 
 .main-btn:hover {
@@ -339,13 +356,13 @@ div .tentaculo {
 
 div .btn-texto {
   position: relative;
-    top: -135px;
-    right: -226px;
-    display: block;
+  top: -135px;
+  right: -226px;
+  display: block;
 }
 
 #btn-texto {
-  background-color: #80361D;
+  background-color: #80361d;
   color: #fff;
 }
 
@@ -353,31 +370,33 @@ div .btn-texto {
   display: inline-block;
   color: #fff;
   padding: 15px;
-
 }
 
 .title-secundary {
-  font-family: 'Museo Slab 700';
-    position: relative;
-    top: -185px;
-    color: #fff;
+  font-family: "Museo Slab 700";
+  position: relative;
+  top: -225px;
+  color: #fff;
 }
 
 .row-texto-div {
   position: relative;
-  top: 105px;
+  top: 60px;
 }
+
 #tittle-three {
-  color:#80361D;
+  color: #80361d;
   position: relative;
-  left: -293px ;
-  font-family: 'Museo Slab 700';
+  left: -300px;
+  top: 60px;
+  font-family: "Museo Slab 700";
 }
 
 .row-texto-img {
   display: inline-block;
   position: relative;
-  top: 90px;
+  top: 100px;
+  right: -90px;
 }
 
 .imagen-icono {
@@ -387,25 +406,86 @@ div .btn-texto {
 }
 
 .imagen-icono img {
- width: 83px;
+  width: 83px;
 }
 
 .row-texto-img-dos {
   position: relative;
-  top: -159px;
-  left: 234px;
+  top: -156px;
+  right: -540px;
 }
 
 .imagen-icono-dos {
   position: relative;
   left: -106px;
   top: -74px;
-  
 }
 
 .imagen-icono-dos img {
   width: 83px;
- }
+}
+
+.sombra_fija {
+  -webkit-transform: translateX(0);
+}
+
+.sombra_fija::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 10px;
+  left: 5%;
+  top: 100%;
+
+  background: -webkit-radial-gradient(
+    center,
+    ellipse,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  -webkit-transition-duration: 0.3s;
+  opacity: 0;
+}
+
+.sombra_fija:hover {
+  -webkit-transform: translateY(-5px);
+}
+
+.sombra_fija:hover::before {
+  -webkit-transform: translateY(5px);
+  opacity: 1;
+}
+
+.borde-radius{
+  width: 1280px;
+  height: 397px;
+  border-width: 0px 5px 5px 5px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #80361d;
+  border-radius: 2% 5% 5%;
+  position: relative;
+  top:30px;
+}
+
+.borde-radius p {
+  margin: -11px;
+}
+
+/* div #image-saludo {
+  position: relative;
+  width: 83px;
+}
+
+div #image-saludo::before {
+  content: url('/assets/images/saludo.png');
+  display:block;
+  width: 75px;
+  height:75px;
+  position:absolute;
+  left: 10px;
+  top: 10px;
+} */
 
 /*===========================
     10.CONTACT css 
@@ -473,7 +553,7 @@ p.form-message.error.form-message.error {
     11.FOOTER css 
 ===========================*/
 .footer_area {
-  background-color: #01151c;
+  background-color: #6d401b;
 }
 
 .footer_menu ul li {
@@ -548,7 +628,7 @@ p.form-message.error.form-message.error {
   height: 40px;
   line-height: 40px;
   border-radius: 5px;
-  background-color: #80361D;
+  background-color: #80361d;
   text-align: center;
   z-index: 99;
   transition: all 0.3s ease-out 0s;
@@ -558,7 +638,7 @@ p.form-message.error.form-message.error {
 
 .back-to-top:hover {
   color: #fff;
-  background-color: #80361D;
+  background-color: #80361d;
 }
 
 .back-to-top i {
